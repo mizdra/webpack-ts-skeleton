@@ -1,0 +1,30 @@
+{
+  "name": "webpack-ts-skeleton",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base ./src --hot --inline --open",
+    "build": "webpack --config webpack.config.js",
+    "postinstall": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizdra/webpack-ts-skeleton.git"
+  },
+  "author": "mizdra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizdra/webpack-ts-skeleton/issues"
+  },
+  "homepage": "https://github.com/mizdra/webpack-ts-skeleton#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "*",
+    "typescript": "*",
+    "typings": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}
