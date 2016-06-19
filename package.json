@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --content-base ./src --hot --inline --open",
-    "build": "webpack --config webpack.config.js",
-    "postinstall": "typings install"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
