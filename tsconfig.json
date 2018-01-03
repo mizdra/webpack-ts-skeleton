@@ -10,7 +10,4 @@
         "declaration": false,
         "moduleResolution": "node"
     },
-    "files": [
-        "./typings/index.d.ts"
-    ]
 }

@@ -22,7 +22,6 @@
   "devDependencies": {
     "awesome-typescript-loader": "*",
     "typescript": "*",
-    "typings": "*",
     "webpack": "*",
     "webpack-dev-server": "*"
   }
