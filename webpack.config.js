@@ -1,8 +1,21 @@
+const { resolve } = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+
+const rootPath = resolve(__dirname, '.')
+const srcPath  = resolve(__dirname, './src')
+const distPath = resolve(__dirname, './dist')
+
 module.exports = {
-  entry: './src/scripts/index.ts',
+  entry: {
+    app: [
+      'tslib',
+      resolve(srcPath, './index.ts'),
+    ],
+  },
   output: {
-    path: './src',
-    filename: 'bundle.js',
+    path: distPath,
+    filename: 'js/[name].[hash].js',
   },
 
   module: {
@@ -12,8 +25,16 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.ts'],
+    extensions: ['.js', '.ts'],
   },
 
   devtool: 'source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: resolve(distPath, './index.html'),
+      template: resolve(rootPath, './index.html'),
+      inject: true,
+    }),
+    new CleanWebpackPlugin([distPath]),
+  ],
 }

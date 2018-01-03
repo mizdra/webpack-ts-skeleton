@@ -20,6 +20,9 @@
   "dependencies": {},
   "devDependencies": {
     "awesome-typescript-loader": "*",
+    "clean-webpack-plugin": "^0.1.17",
+    "html-webpack-plugin": "^2.30.1",
+    "tslib": "^1.8.1",
     "tslint": "*",
     "tslint-config-standard": "*",
     "typescript": "*",
