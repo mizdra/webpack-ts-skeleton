@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base ./src --hot --inline --open",
+    "start": "yarn run dev",
+    "dev": "webpack-dev-server --content-base ./src --hot --inline --open",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
