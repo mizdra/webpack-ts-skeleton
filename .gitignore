@@ -66,6 +66,4 @@ Temporary Items
 
 
 ### User
-bundle.js
-bundle.js.map
-typings
+/dist
