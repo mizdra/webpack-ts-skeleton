@@ -4,6 +4,7 @@
     "tslint-config-standard"
   ],
   "rules": {
-    "indent": [true, "spaces", 2]
+    "indent": [true, "spaces", 2],
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}]
   }
 }
