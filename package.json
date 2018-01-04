@@ -20,14 +20,14 @@
   "homepage": "https://github.com/mizdra/webpack-ts-skeleton#readme",
   "dependencies": {},
   "devDependencies": {
-    "awesome-typescript-loader": "*",
+    "awesome-typescript-loader": "^3.4.1",
     "clean-webpack-plugin": "^0.1.17",
     "html-webpack-plugin": "^2.30.1",
     "tslib": "^1.8.1",
-    "tslint": "*",
-    "tslint-config-standard": "*",
-    "typescript": "*",
-    "webpack": "*",
-    "webpack-dev-server": "*"
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   }
 }
