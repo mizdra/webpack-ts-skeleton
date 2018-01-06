@@ -6,6 +6,8 @@
   "scripts": {
     "start": "yarn run dev",
     "dev": "webpack-dev-server --content-base ./src --hot --inline --open",
+    "lint": "tslint -p . 'src/**/*.ts'",
+    "prebuild": "yarn run lint",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
