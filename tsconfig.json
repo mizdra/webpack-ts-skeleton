@@ -30,7 +30,6 @@
     "allowUnusedLabels": false,
 
     /* Module Resolution Options */
-    "allowSyntheticDefaultImports": true,
     "locale": "ja"
   },
   // "include": ["./src/**/*"],
