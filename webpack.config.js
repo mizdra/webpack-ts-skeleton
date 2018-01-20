@@ -1,6 +1,5 @@
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const rootPath = resolve(__dirname, '.')
 const srcPath  = resolve(__dirname, './src')
@@ -35,6 +34,5 @@ module.exports = {
       template: resolve(rootPath, './index.html'),
       inject: true,
     }),
-    new CleanWebpackPlugin([distPath]),
   ],
 }
