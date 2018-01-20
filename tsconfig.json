@@ -3,9 +3,12 @@
     /* Basic Options */
     // "outDir": "./dist",
     "target": "es5",
-    "module": "commonjs",
     "lib": ["esnext", "dom"],
     "declaration": false,
+
+    /* Module Options */
+    "module": "es2015",
+    "moduleResolution": "node",
 
     /* Strict Type-Checking Options */
     "strict": true,
