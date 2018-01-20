@@ -1,28 +1,24 @@
-// ref:
-// https://github.com/mizdra/ts-skeleton/blob/e5f2149613eecf1d65336878dabdbb644e467cbf/tsconfig.json
 {
   "compilerOptions": {
     /* Basic Options */
+    // "outDir": "./dist",
     "target": "es5",
     "module": "commonjs",
     "lib": ["esnext", "dom"],
     "declaration": false,
-    "sourceMap": true,
-    // "outDir": "./dist",
     "removeComments": true,
-    "noEmitHelpers": true,
-    "importHelpers": true,
-    "pretty": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
 
-    /* Module Resolution Options */
-    "locale": "ja"
+    /* Helper Options */
+    "noEmitHelpers": true,
+    "importHelpers": true,
+
+    /* Debug Options */
+    "sourceMap": true,
+    "pretty": true,
+    "locale": "ja",
   },
   // "include": ["./src/**/*"],
   // "exclude": ["./node_modules"]
