@@ -21,14 +21,6 @@
     "noImplicitThis": true,
     "alwaysStrict": true,
 
-    /* Additional Checks */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-
     /* Module Resolution Options */
     "locale": "ja"
   },
