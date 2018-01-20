@@ -6,7 +6,6 @@
     "module": "commonjs",
     "lib": ["esnext", "dom"],
     "declaration": false,
-    "removeComments": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
