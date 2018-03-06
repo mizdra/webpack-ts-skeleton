@@ -27,7 +27,6 @@ module.exports = {
     extensions: ['.js', '.ts'],
   },
 
-  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       filename: resolve(distPath, './index.html'),
