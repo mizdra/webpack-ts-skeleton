@@ -1,5 +1,6 @@
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const rootPath = resolve(__dirname, '.')
 const srcPath  = resolve(__dirname, './src')
@@ -19,7 +20,7 @@ module.exports = {
 
   module: {
     rules: [
-      { test: /\.ts$/, loader: 'awesome-typescript-loader' },
+      { test: /\.ts$/, loader: 'ts-loader' },
     ],
   },
 
@@ -27,12 +28,15 @@ module.exports = {
     extensions: ['.js', '.ts'],
   },
 
-  devtool: 'source-map',
   plugins: [
+    new FriendlyErrorsWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: resolve(distPath, './index.html'),
       template: resolve(rootPath, './index.html'),
       inject: true,
     }),
   ],
+  devServer: {
+    quiet: true, // for friendly-errors-webpack-plugin
+  },
 }
