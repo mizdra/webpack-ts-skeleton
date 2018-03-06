@@ -38,5 +38,7 @@ module.exports = {
   ],
   devServer: {
     quiet: true, // for friendly-errors-webpack-plugin
+    contentBase: srcPath,
+    watchContentBase: true,
   },
 }
