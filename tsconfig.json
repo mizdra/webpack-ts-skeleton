@@ -20,8 +20,8 @@
     /* Debug Options */
     "sourceMap": true,
     "pretty": true,
-    "locale": "ja",
-  },
+    "locale": "ja"
+  }
   // "include": ["./src/**/*"],
   // "exclude": ["./node_modules"]
 }
