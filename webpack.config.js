@@ -1,6 +1,5 @@
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const rootPath = resolve(__dirname, '.')
 const srcPath  = resolve(__dirname, './src')
@@ -29,16 +28,10 @@ module.exports = {
   },
 
   plugins: [
-    new FriendlyErrorsWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: resolve(distPath, './index.html'),
       template: resolve(rootPath, './index.html'),
       inject: true,
     }),
   ],
-  devServer: {
-    quiet: true, // for friendly-errors-webpack-plugin
-    contentBase: srcPath,
-    watchContentBase: true,
-  },
 }
