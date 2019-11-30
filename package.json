@@ -6,7 +6,6 @@
   "scripts": {
     "start": "yarn run dev",
     "dev": "webpack-dev-server --mode development",
-    "lint": "tslint -p . 'src/**/*.ts'",
     "check:eslint": "eslint --format codeframe 'src/**/*.{ts,tsx}'",
     "check:prettier": "prettier --check 'src/**/*.{ts,tsx}'",
     "prebuild": "yarn run lint",
@@ -37,8 +36,6 @@
     "html-webpack-plugin": "^3.2.0",
     "prettier": "^1.19.1",
     "ts-loader": "^6.2.1",
-    "tslint": "^5.20.1",
-    "tslint-config-standard": "^9.0.0",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
