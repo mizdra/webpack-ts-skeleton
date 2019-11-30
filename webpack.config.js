@@ -1,16 +1,13 @@
-const { resolve } = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const rootPath = resolve(__dirname, '.')
-const srcPath  = resolve(__dirname, './src')
-const distPath = resolve(__dirname, './dist')
+const rootPath = resolve(__dirname, '.');
+const srcPath = resolve(__dirname, './src');
+const distPath = resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    app: [
-      'tslib',
-      resolve(srcPath, './index.ts'),
-    ],
+    app: ['tslib', resolve(srcPath, './index.ts')],
   },
   output: {
     path: distPath,
@@ -18,9 +15,7 @@ module.exports = {
   },
 
   module: {
-    rules: [
-      { test: /\.ts$/, loader: 'ts-loader' },
-    ],
+    rules: [{ test: /\.ts$/, loader: 'ts-loader' }],
   },
 
   resolve: {
@@ -34,4 +29,4 @@ module.exports = {
       inject: true,
     }),
   ],
-}
+};
