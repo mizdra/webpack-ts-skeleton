@@ -4,7 +4,7 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "esnext", // ES周りは必要に応じて babel に任せる
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom"],
 
     /* Module Options */
     "module": "esnext", // モジュール周りは tsc 側で弄らず webpack に任せる
