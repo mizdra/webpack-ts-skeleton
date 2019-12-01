@@ -8,7 +8,7 @@ const distPath = resolve(__dirname, './dist');
 /** @type import('webpack').Configuration */
 module.exports = {
   entry: {
-    app: [resolve(srcPath, './index.ts')],
+    app: [resolve(srcPath, './index.tsx')],
   },
   output: {
     path: distPath,
@@ -16,11 +16,19 @@ module.exports = {
   },
 
   module: {
-    rules: [{ test: /\.ts$/, loader: 'ts-loader' }],
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {
+          transpileOnly: true,
+        },
+      },
+    ],
   },
 
   resolve: {
-    extensions: ['.js', '.ts'],
+    extensions: ['.js', '.ts', '.tsx'],
   },
 
   plugins: [
