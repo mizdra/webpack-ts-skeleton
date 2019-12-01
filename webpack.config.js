@@ -5,6 +5,7 @@ const rootPath = resolve(__dirname, '.');
 const srcPath = resolve(__dirname, './src');
 const distPath = resolve(__dirname, './dist');
 
+/** @type import('webpack').Configuration */
 module.exports = {
   entry: {
     app: [resolve(srcPath, './index.ts')],
