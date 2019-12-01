@@ -23,10 +23,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    /* Helper Options */
-    // "noEmitHelpers": true,
-    // "importHelpers": true,
-
     /* Debug Options */
     "sourceMap": true, // for ts-loader (ref: https://github.com/TypeStrong/ts-loader#devtool--sourcemaps)
     "locale": "ja"

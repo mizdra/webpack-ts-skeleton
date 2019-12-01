@@ -7,7 +7,7 @@ const distPath = resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    app: ['tslib', resolve(srcPath, './index.ts')],
+    app: [resolve(srcPath, './index.ts')],
   },
   output: {
     path: distPath,

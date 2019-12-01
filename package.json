@@ -21,9 +21,7 @@
     "url": "https://github.com/mizdra/webpack-ts-skeleton/issues"
   },
   "homepage": "https://github.com/mizdra/webpack-ts-skeleton#readme",
-  "dependencies": {
-    "tslib": "^1.10.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.9.0",
