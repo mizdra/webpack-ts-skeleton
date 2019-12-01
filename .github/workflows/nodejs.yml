@@ -16,6 +16,7 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.OS }}-node-
 
       - name: yarn install
         if: steps.cache.outputs.cache-hit != 'true'
@@ -37,6 +38,7 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.OS }}-node-
 
       - name: yarn install
         if: steps.cache.outputs.cache-hit != 'true'
