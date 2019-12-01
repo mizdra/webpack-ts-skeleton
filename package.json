@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "yarn run dev",
+    "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
     "check": "run-p -l -c 'check:tsc --pretty' 'check:eslint --color' check:prettier",
     "check:tsc": "tsc --noEmit",
     "check:eslint": "eslint --format codeframe 'src/**/*.{ts,tsx}'",
-    "check:prettier": "prettier --check 'src/**/*.{ts,tsx}'",
-    "prebuild": "yarn run lint",
-    "build": "webpack --mode production"
+    "check:prettier": "prettier --check 'src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
