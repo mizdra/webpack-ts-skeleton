@@ -65,7 +65,11 @@ module.exports = {
 
     // import
     // eslint ではモジュールの解決に失敗することがあるので, TypeScriptに任せる
+    // ref: https://github.com/benmosher/eslint-plugin-import/issues/1341
     'import/named': 0,
+    // default export は tsserver と相性が悪いので禁止する
+    // ref: https://typescript-jp.gitbook.io/deep-dive/main-1/defaultisbad
+    'import/no-default-export': 2,
     // `@material-ui/{core,icons}` を直接 import するとビルドや tsserver の応答が遅くなるので,
     // `@material-ui/{core,icons}` の import を禁止する
     // ref: https://material-ui.com/guides/minimizing-bundle-size/#how-to-reduce-the-bundle-size
