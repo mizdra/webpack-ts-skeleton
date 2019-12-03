@@ -5,8 +5,8 @@ const rootPath = resolve(__dirname, '.');
 const srcPath = resolve(__dirname, './src');
 const distPath = resolve(__dirname, './dist');
 
-/** @type import('webpack').Configuration */
-module.exports = {
+/** @type import('webpack').ConfigurationFactory */
+module.exports = (env, argv) => ({
   entry: {
     app: [resolve(srcPath, './index.tsx')],
   },
@@ -14,6 +14,7 @@ module.exports = {
     path: distPath,
     filename: 'js/[name].[hash].js',
   },
+  devtool: argv.mode === 'development' ? 'inline-source-map' : false,
 
   module: {
     rules: [
@@ -38,4 +39,4 @@ module.exports = {
       inject: true,
     }),
   ],
-};
+});
