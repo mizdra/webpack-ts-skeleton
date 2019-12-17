@@ -2,12 +2,7 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": false,
   "eslint.enable": true,
-  "eslint.validate": [
-    // `autoFix` を `true` にすると F1 > `ESLint: Fix all auto-fixable Problems` でfixできる
-    { "language": "javascript", "autoFix": true },
-    { "language": "javascriptreact", "autoFix": true },
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
-  ],
-  "eslint.autoFixOnSave": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
