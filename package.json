@@ -31,6 +31,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@mizdra/eslint-config-mizdra": "^0.4.0",
     "@types/webpack": "^4.41.18",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
