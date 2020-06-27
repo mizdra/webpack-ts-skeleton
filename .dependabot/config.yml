@@ -9,3 +9,12 @@ update_configs:
           update_type: 'all' # プロジェクトに応じて適切なパラメータに変える
     commit_message:
       prefix: 'deps'
+
+  - package_manager: 'github_actions'
+    directory: '/' # `.github` があるディレクトリ
+    update_schedule: 'monthly'
+    automerged_updates:
+      - match:
+          update_type: 'all' # プロジェクトに応じて適切なパラメータに変える
+    commit_message:
+      prefix: 'deps'
