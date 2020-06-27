@@ -8,7 +8,7 @@ update_configs:
       - match:
           update_type: 'all' # プロジェクトに応じて適切なパラメータに変える
     commit_message:
-      prefix: 'deps'
+      prefix: 'chore(deps)'
 
   - package_manager: 'github_actions'
     directory: '/' # `.github` があるディレクトリ
@@ -17,4 +17,4 @@ update_configs:
       - match:
           update_type: 'all' # プロジェクトに応じて適切なパラメータに変える
     commit_message:
-      prefix: 'deps'
+      prefix: 'chore(deps)'
