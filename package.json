@@ -30,7 +30,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@mizdra/eslint-config-mizdra": "^0.4.0",
+    "@mizdra/eslint-config-mizdra": "^0.5.0",
     "@types/webpack": "^4.41.21",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
