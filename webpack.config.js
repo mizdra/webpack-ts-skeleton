@@ -15,7 +15,7 @@ module.exports = (env, argv) => ({
   },
   output: {
     path: distPath,
-    filename: 'js/[name].[hash].js',
+    filename: 'js/[name].[chunkhash].js',
   },
   devtool: argv.mode === 'development' ? 'inline-source-map' : false,
 
